@@ -1,0 +1,7 @@
+https://coolors.co/palette/0f0606-200b0b-2f0000-490000-650000
+
+Black: #0F0606
+Black Bean: #200B0B
+Bean: #2F0000
+Bean Crimson: #490000
+Crimson: #650000

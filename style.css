@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100svh;
+  width: 100svw;
+}
+header {
+  height: 80px;
+  width: 100svw;
+  background-color: #0f0606;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+}
+nav {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+a {
+  color: white;
+}
+main {
+  background-color: white;
+  min-height: 100%;
+  width: 100%;
+  top: 100px;
+}
+
+.BlackFriday {
+  height: 100svh;
+  width: 100svw;
+  background-color: #0f0606;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

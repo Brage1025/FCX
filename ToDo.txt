@@ -1,0 +1,47 @@
+Oppgavespesifikasjon:
+Innhold
+
+En stor overskrift (f.eks. navnet på produktet eller arrangementet)
+
+En kort introduksjonstekst (beskrivelse eller salgsargument)
+
+En tydelig CTA-knapp med en handlingstekst (f.eks. “Bestill i dag!”, “Reserver din plass” eller “Meld deg på nå”)
+
+Eventuelt et relevant bilde eller illustrasjon (bruk gjerne stock-bilder fra f.eks. unsplash.comLinks to an external site.)
+
+Layout og design
+
+Hele siden skal bestå av én seksjon: en hero.
+
+Bruk CSS til å lage et luftig og estetisk design.
+
+Sørg for god kontrast mellom tekst og bakgrunn.
+
+Bruk marger, padding og mellomrom for å gi et ryddig og luftig uttrykk.
+
+CTA-knappen skal skille seg visuelt ut fra resten.
+
+Designkrav
+Siden skal være responsiv, altså fungere både på mobil og desktop.
+
+Du kan velge tema, farger, skrifttyper og layout selv- bruk fantasien!
+
+Levering:
+Last opp prosjektet til et offentlig GitHub-repo.
+
+Host løsningen live med GitHub Pages.
+
+Lever lenke til:
+
+GitHub-repoet
+
+Vurderingskriterier:
+God og semantisk bruk av HTML-elementer (<h1>, <p>, <button>, <section>, osv.).
+
+Strukturert og ryddig CSS (klasser, spacing, fargebruk).
+
+Estetisk og oversiktlig design – “luftighet” og balanse i layout.
+
+Tydelig CTA som fanger oppmerksomhet.
+
+Mobilvennlig layout (responsivitet).
