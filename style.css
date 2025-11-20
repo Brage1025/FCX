@@ -8,14 +8,16 @@ body {
 }
 header {
   height: 80px;
-  width: 100svw;
+  width: 100%;
   background-color: #0f0606;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  position: sticky;
+  position: fixed; /* Found a way to brute force the nav bar to stay visible */
   top: 0;
+  z-index: 9999;
 }
+
 nav {
   width: 60%;
   height: 100%;
@@ -34,18 +36,56 @@ a {
   color: white;
 }
 main {
-  background-color: white;
+  background-color: blue; /* Change to the main one after testing the rest of the site */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  object-fit: contain;
   min-height: 100%;
   min-width: 100%;
   top: 100px;
 }
 
 .BlackFriday {
-  height: 100svh;
-  width: 100svw;
-  background-color: #0f0606;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#BFS {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* fills 700px box, keeps aspect ratio */
+  display: block;
+}
+
+.hero-friday {
+  position: absolute;
+  bottom: 0; /* stick to bottom of image */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.trade-now {
+  margin-top: 10px;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #ff1a1a;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.trade-now:hover {
+  background-color: #cc0000;
 }
