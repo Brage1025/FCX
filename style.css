@@ -4,7 +4,7 @@
 }
 body {
   min-height: 100svh;
-  width: 100svw;
+  min-width: 100svw;
 }
 header {
   height: 80px;
@@ -36,7 +36,7 @@ a {
 main {
   background-color: white;
   min-height: 100%;
-  width: 100%;
+  min-width: 100%;
   top: 100px;
 }
 
