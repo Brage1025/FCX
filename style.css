@@ -6,6 +6,14 @@
 body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #0f0606 0%,
+    #200b0b 5%,
+    #2f0000 15%,
+    #490000 35%,
+    #650000 60%
+  );
 }
 
 /* HEADER */
@@ -55,39 +63,52 @@ nav a {
 
 .hero {
   width: 100%;
-  min-height: 60vh;
   margin-top: 100px;
+  position: relative; /* needed for correct positioning */
+  padding-bottom: 2rem; /* ensures hero grows when text grows */
 }
 
 .hero-content {
-  position: relative;
   width: 100%;
-  height: 70vh;
-  overflow: hidden;
+  position: relative; /* new */
 }
 
 .hero-content img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 1400px; /* limits how big it can get */
+  height: auto; /* maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* centers the image horizontally */
+  object-fit: cover; /* keeps image fully visible */
 }
 
+/* The overlay text */
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+
   color: white;
-  font-family: Arial, sans-serif;
+  text-align: center;
+
+  background: #200b0bbd;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+
+  max-width: 80%;
 
   display: flex;
   flex-direction: column;
-  gap: 4%;
+  gap: 1.2rem;
+}
 
-  background: #200b0bbe;
-  padding: 10% 5%;
-  border-radius: 10px;
+/* Make hero expand naturally */
+.hero::after {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 20%; /* adjust this number if text is larger */
 }
 
 .cta-btn {
@@ -96,7 +117,7 @@ nav a {
   padding: 2% 5%;
   font-size: 25px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Arial, sans-serif;
   background-color: #fc7202;
   color: rgb(0, 0, 0);
@@ -142,11 +163,11 @@ nav a {
 /* FOOTER */
 
 .site-footer {
-  width: 100%;
+  width: 100svw;
   background-color: #0f0606;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
   font-size: 14px;
   font-family: Arial, sans-serif;
   margin-top: 0;
