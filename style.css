@@ -64,51 +64,55 @@ nav a {
 .hero {
   width: 100%;
   margin-top: 100px;
-  position: relative; /* needed for correct positioning */
-  padding-bottom: 2rem; /* ensures hero grows when text grows */
+  position: relative; /* I found out I needed this for correct positioning */
+  padding-bottom: 2rem; /* I used rem tho I could probs just used 2% or something. Idk.. */
 }
 
 .hero-content {
   width: 100%;
-  position: relative; /* new */
+  position: relative;
 }
 
 .hero-content img {
   width: 100%;
-  max-width: 1400px; /* limits how big it can get */
+  max-width: 1400px; /* limits how big it can get, hard coded cuz didn't find a way to keep the aspect ratio I wanted */
   height: auto; /* maintains aspect ratio */
   display: block;
-  margin: 0 auto; /* centers the image horizontally */
-  object-fit: cover; /* keeps image fully visible */
+  margin: 0 auto;
+  object-fit: cover; /* trying to stop the img to dissapear */
 }
 
 /* The overlay text */
+
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Don't think we have learned this, but seems like the easiest way to make the text behave  */
 
   color: white;
   text-align: center;
 
   background: #200b0bbd;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem; /* I used rem tho I could probs just used 2% and 3%. Again I kinda gave up*/
   border-radius: 10px;
 
   max-width: 80%;
 
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.2rem; /* If it works, don't fix it*/
 }
 
-/* Make hero expand naturally */
+/* Trying some stuff*/
 .hero::after {
   content: "";
   display: block;
   height: 0;
-  padding-bottom: 20%; /* adjust this number if text is larger */
+  padding-bottom: 20%;
 }
 
 .cta-btn {
@@ -144,7 +148,11 @@ nav a {
 .selection-btn {
   display: inline-block;
   padding: 10% 10%;
-  font-size: clamp(18px, 2vw, 28px);
+  font-size: clamp(
+    18px,
+    2vw,
+    28px
+  ); /* Not sure what clamp does, fixing a minimum value, a preferred value and maximum value. Found it a cool consept and tried to use it. If that's a bad thing to do, pleace give me a reason of why. */
   background-color: #fc7202;
   color: rgb(0, 0, 0);
   font-size: 20px;
