@@ -5,3 +5,5 @@ Black Bean: #200B0B
 Bean: #2F0000
 Bean Crimson: #490000
 Crimson: #650000
+FCX Orange: #ffa308
+FCX Dark Orange: #fc7202
