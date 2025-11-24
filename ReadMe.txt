@@ -1,17 +1,15 @@
--------------------------FCX'S-OFFICIAL-READ-ME-------------------------------------
+-------------------------FCX'S-OFFICIAL-READ-ME-----------------------------------------
 
-More info here soon
+This is a parody and I ended up giving up as I think I managed to do something correct
 
----
+----------------------------------------------------------------------------------------
 
 Feel free to give me tips on what I should change or something.
 
 --------------------------------------RANTING-ZONE--------------------------------------
 
-I didn't have much to say here other yet
+I think I'll give up now..
 
 --------------------------------------NOTES---------------------------------------------
 
-RSKeys and the RSKeys logo are copyrighted and used with permition by the RSKeys Group.
-
-The rest of the images are made and own by FCX Trading Ltd.
+All images are made and own by FCX Trading Ltd.
